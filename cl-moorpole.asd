@@ -6,8 +6,7 @@
   :description "Describe cl-moorpole here"
   :author "Matthieu Peeters"
   :license "MIT"
-  :depends-on (#:cl
-               #:iterate
+  :depends-on (#:iterate
                #:alexandria)
   :serial t
   :components ((:file "package")

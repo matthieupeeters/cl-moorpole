@@ -4,5 +4,6 @@
 
 (defpackage #:cl-moorpole
   (:nicknames #:mp)
-  (:use #:cl #:alexandria #:iterate))
+  (:use #:cl #:alexandria #:iterate)
+  (:export #:map-fl))
 
