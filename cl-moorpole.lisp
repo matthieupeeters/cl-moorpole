@@ -24,3 +24,9 @@ The arguments 'first' and 'last' are used to indicate that the element is the fi
              (push (apply fn (zerop p) (= (1+ p) l)
                           (mapcar (lambda (x) (elt x p)) sequences))
                    r))))) 
+
+
+(defun apply-times (n fn &rest args)
+  (if (zerop n)
+      (values-list args)
+      (apply #'apply-times (list* (1- n) fn (multiple-value-list (apply fn args))))))
